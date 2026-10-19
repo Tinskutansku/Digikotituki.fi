@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Digikotituki — IT-kotikäynnit opiskelijahintaan</title>
 <meta name="description" content="Digikotituki tarjoaa IT-kotikäyntejä opiskelijahintaan Vantaan Koivukylän, Korson ja Rekolan alueella. Selkokielistä, kärsivällistä apua tietokoneiden, puhelinten ja verkkojen kanssa.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css">
 <style>
   :root {
     --blue-600: #3D6FE0;
@@ -412,6 +410,18 @@
     font-style: italic;
     max-width: 70ch;
   }
+  .deduction {
+    margin-top: 28px;
+    background: var(--blue-50);
+    border-left: 4px solid var(--blue-600);
+    border-radius: 12px;
+    padding: 20px 24px;
+    max-width: 70ch;
+  }
+  .deduction h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+  .deduction p { color: var(--navy-900); font-size: 0.97rem; }
+  .deduction p + p { margin-top: 8px; }
+  .deduction a { color: var(--blue-600); text-decoration: underline; text-underline-offset: 2px; }
 
   /* ---------- CONTACT / FOOTER ---------- */
   .contact {
@@ -467,6 +477,8 @@
     color: var(--slate-400);
     font-size: 0.85rem;
   }
+  .footer-note a { text-decoration: underline; text-underline-offset: 2px; }
+  .footer-note a:hover { color: var(--blue-600); }
 
   /* ---------- RESPONSIVE ---------- */
   @media (max-width: 860px) {
@@ -546,7 +558,7 @@
       <div class="value-item">
         <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 9V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><rect x="7" y="9" width="15" height="10" rx="2"/><circle cx="14.5" cy="14" r="1.6"/></svg>
         <h3>Opiskelijahinta</h3>
-        <p>Reilu hinnoittelu ilman yllätyksiä tai piilokuluja.</p>
+        <p>Reilu hinnoittelu ilman yllätyksiä tai piilokuluja. Kotikäynneistä voit saada kotitalousvähennystä.</p>
       </div>
     </div>
   </div>
@@ -683,6 +695,11 @@
       </table>
     </div>
     <p class="pricing-footnote">*Hinnat sisältävät alv 25,5&nbsp;%. Ensimmäinen tunti veloitetaan aina kokonaisena, kun kyseessä ei ole kiinteähintainen paketti. Matkat sisältyvät hintaan palvelualueella.</p>
+    <div class="deduction" id="kotitalousvahennys">
+      <h3>Kotitalousvähennys</h3>
+      <p>Kotona tehdystä työstä, kuten laitteiden asennuksesta, verkon käyttöönotosta ja laitteiden käytön opastuksesta, voit saada kotitalousvähennystä verotuksessa. Laskutan UKKO.fi-laskutuspalvelun kautta, ja laskusta näet työn osuuden.</p>
+      <p>Vähennyksessä on 150 euron vuotuinen omavastuu henkilöä kohden, joten siitä hyötyy eniten, jos ostat kotiin muitakin palveluja, kuten siivousta. Etätuki ei oikeuta vähennykseen, koska työ ei tapahdu kotonasi. <a href="https://www.vero.fi/henkiloasiakkaat/asuminen/kotitalous_tyon_teettajana/">Lue lisää Verohallinnon sivuilta</a>.</p>
+    </div>
   </div>
 </section>
 
@@ -711,7 +728,7 @@
   </div>
 </section>
 
-<p class="footer-note">© 2026 Digikotituki · Tanja Lilja · digikotituki.fi</p>
+<p class="footer-note">© 2026 Digikotituki · Tanja Lilja · digikotituki.fi · <a href="tietosuoja.html">Tietosuojaseloste</a></p>
 
 </body>
 </html>
